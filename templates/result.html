@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Google Maps API Demo - Result</h1>
+
+    {% if error_message %}
+    <p style="color: red;">{{ error_message }}</p>
+    {% else %}
+    {% if location_info %}
+    <p><strong>Formatted Address:</strong> {{ location_info[0] }}</p>
+    <p><strong>Latitude:</strong> {{ location_info[1] }}</p>
+    <p><strong>Longitude:</strong> {{ location_info[2] }}</p>
+    <p><strong>Place ID:</strong> {{ location_info[3] }}</p>
+    {% else %}
+    <p>No results found.</p>
+    {% endif %}
+    {% endif %}
+
+    <a href="/">Back to Home</a>
+</body>
+
+</html>

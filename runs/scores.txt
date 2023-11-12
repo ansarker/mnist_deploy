@@ -1,0 +1,51 @@
+Accuracy: 0.8746
+Class: T-shirt/top
+Precision: 0.7986
+Recall: 0.8210
+F1-score: 0.8097
+---
+Class: Trouser
+Precision: 0.9741
+Recall: 0.9760
+F1-score: 0.9750
+---
+Class: Pullover
+Precision: 0.8205
+Recall: 0.7540
+F1-score: 0.7858
+---
+Class: Dress
+Precision: 0.8943
+Recall: 0.8970
+F1-score: 0.8957
+---
+Class: Coat
+Precision: 0.7582
+Recall: 0.8370
+F1-score: 0.7956
+---
+Class: Sandal
+Precision: 0.9188
+Recall: 0.9840
+F1-score: 0.9503
+---
+Class: Shirt
+Precision: 0.6986
+Recall: 0.6560
+F1-score: 0.6766
+---
+Class: Sneaker
+Precision: 0.9541
+Recall: 0.9150
+F1-score: 0.9342
+---
+Class: Bag
+Precision: 0.9646
+Recall: 0.9540
+F1-score: 0.9593
+---
+Class: Ankle boot
+Precision: 0.9655
+Recall: 0.9520
+F1-score: 0.9587
+---

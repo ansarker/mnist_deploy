@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locate this place</title>
+</head>
+
+<body>
+    <h1>Google Maps Geocoding Example</h1>
+    <form method="post">
+        <label for="address">Enter Address:</label>
+        <input type="text" id="address" name="address" required>
+        <button type="submit">Submit</button>
+    </form>
+    {% if address %}
+    <h2>Address: {{ address }}</h2>
+    {% if location_info %}
+    <p>Formatted Address: {{ location_info.formatted_address }}</p>
+    <p>Latitude: {{ location_info.latitude }}</p>
+    <p>Longitude: {{ location_info.longitude }}</p>
+    <p>Place ID: {{ location_info.place_id }}</p>
+    {% else %}
+    <p>{{ location_info.error }}</p>
+    {% endif %}
+    {% endif %}
+</body>
+
+</html>
